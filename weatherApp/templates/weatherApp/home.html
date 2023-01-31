@@ -1,0 +1,10 @@
+{% extends 'weatherApp/base.html' %}
+{% block content %}
+<h1 align="center">Weather Application</h1>
+<form method="POST">
+	{% csrf_token %}
+	<input type="text"  name="country" placeholder="Country">
+	<button type="submit">Check Weather</button>
+	</form>
+	
+{% endblock %}
